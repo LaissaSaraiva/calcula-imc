@@ -5,75 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>.: Calculadora IMC :.</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
   </head>
-  <body>
+  <body class="principal__container flex__container">
     <main>
-      <h1>Cálculo do IMC</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex corrupti
-        expedita optio voluptatem aperiam!
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
-        veniam animi rerum magnam debitis nesciunt error iure cum hic odit.
-      </p>
-      <h2>Como saber o peso ideal?</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-        nostrum et aperiam sint impedit, facere quis aut, at blanditiis animi,
-        suscipit deleniti. Quae, optio debitis.
-      </p>
+      <div class="principal__conteudo">
+        <h1 class="principal__titulo">Cálculo do IMC</h1>
+        <p class="principal__texto">
+          <span>IMC</span> é a sigla para <span>Índice de Massa Corpórea</span>,
+          parâmetro adotado pela <span>Organização Mundial de Saúde</span> para
+          calcular o peso ideal de cada pessoa.
+        </p>
+        <p class="principal__texto">
+          O índice é calculado da seguinte maneira: divide-se o peso do paciente
+          pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso
+          normal quando o resultado do IMC está entre 18,5 e 24,9.
+        </p>
 
-      <form>
-        <label for="altura">Altura<small>(Ex: 1,65)</small></label>
-        <input type="number" name="" id="altura" placeholder="Metros" />
-        <label for="peso">Peso <small>(Ex:58,6)</small></label>
-        <input type="number" name="" id="peso" placeholder="Quilos" />
+        <h2 class="principal__subtitulo">Como saber o peso ideal?</h2>
+        <p class="principal__texto">
+          Quer descobrir seu IMC? Insira seu peso e sua altura abaixo e compare
+          com os índices da tabela.
+          <small
+            >Importante: siga os exemplos e use pontos como separadores.
+          </small>
+        </p>
 
-        <button type="submit">Calcular</button>
-        <button type="reset">Limpar</button>
-      </form>
+        <form class="principal__formulario">
+          <div class="div__input">
+            <label for="altura">Altura<small>(Ex: 1,65)</small></label>
+            <input type="" name="" id="altura" placeholder="Metros" /><br/>
 
-      <table>
-        <tr>
-          <th>Veja a tabela do IMC</th>
-        </tr>
-        <tr>
-          <th>IMC</th>
-          <th>Classificação</th>
-          <th>Obesidade (Grau)</th>
-        </tr>
+            <label for="peso">Peso <small>(Ex: 58,6)</small></label>
+            <input type="" name="" id="peso" placeholder="Quilos" />
+          </div>
 
-        <tr>
-          <td>Menor que 18,5</td>
-          <td>Magreza</td>
-          <td>0</td>
-        </tr>
+          <div class="div__botoes">
+            <button type="submit" class="principal__botao">Calcular</button>
 
-        <tr>
-          <td>Entre 18,5 e 24,9</td>
-          <td>Normal</td>
-          <td>0</td>
-        </tr>
+            <button type="reset" class="principal__botao">Limpar</button>
+          </div>
+        </form>
 
-        <tr>
-          <td>Entre 25,0 e 29,9</td>
-          <td>Sobrepeso</td>
-          <td>I</td>
-        </tr>
+        <div class="div__resultado">
+          <p>15.8</p>
+        </div>
 
-        <tr>
-          <td>Entre 30,0 e 39,9</td>
-          <td>Obesidade</td>
-          <td>II</td>
-        </tr>
-
-        <tr>
-          <td>Maior que 40,0</td>
-          <td>Obesidade Grave</td>
-          <td>III</td>
-        </tr>
-      </table>
+        <table class="principal__tabela">
+          <thead>
+            <tr>
+              <th colspan="3">Veja a tabela do IMC</th>
+            </tr>
+            <tr>
+              <th>IMC</th>
+              <th>Classificação</th>
+              <th>Obesidade (Grau)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Menor que 18,5</td>
+              <td>Magreza</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Entre 18,5 e 24,9</td>
+              <td>Normal</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Entre 25,0 e 29,9</td>
+              <td>Sobrepeso</td>
+              <td>I</td>
+            </tr>
+            <tr>
+              <td>Entre 30,0 e 39,9</td>
+              <td>Obesidade</td>
+              <td>II</td>
+            </tr>
+            <tr>
+              <td>Maior que 40,0</td>
+              <td>Obesidade Grave</td>
+              <td>III</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
   </body>
 </html>
