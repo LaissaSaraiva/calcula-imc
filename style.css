@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --cor-principal: #000000;
+  --cor-secundaria: rgba(247, 247, 247, 0.719);
+  --gradiente-principal: linear-gradient(45deg, #d9a7c7, #fffcdc);
+}
+
+/* Conteúdo */
+.principal__container {
+  text-align: center;
+  background: var(--gradiente-principal);
+  padding: 15px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+.flex__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.principal__conteudo {
+  border: 1px solid var(--cor-principal);
+  border-radius: 15px;
+  padding: 20px 25px;
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: var(--cor-secundaria);
+}
+
+.principal__texto {
+  text-align: justify;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.principal__texto span {
+  font-weight: 700;
+}
+
+.principal__titulo {
+  margin-bottom: 16px;
+}
+
+.principal__subtitulo {
+  margin: 32px 0 16px;
+}
+
+/* Formulário */
+
+.principal__formulario {
+  margin: 35px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 450px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.principal__formulario input {
+  padding: 5px 8px;
+  width: 20%;
+  background-color: transparent;
+  border: 0.5px solid #d9a7c7;
+  border-radius: 5px;
+}
+
+.principal__formulario input::placeholder {
+  font-size: 11px;
+}
+
+.div__input {
+  max-width: 250px;
+}
+
+.div__botoes {
+  max-width: 100px;
+}
+
+.div__resultado {
+  display: block;
+}
+
+.principal__botao {
+  margin-top: 10px;
+  width: 100px;
+  padding: 8px 0;
+  border: none;
+  border-radius: 15px;
+  font-weight: 500;
+  background-color: #d9a7c7;
+  transition: 2s all;
+  cursor: pointer;
+}
+
+.principal__botao:hover {
+  background-color: #581540;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Tabela */
+
+.principal__tabela {
+  margin: 30px auto 0;
+  /* border-collapse: collapse; */
+}
+
+.principal__tabela thead {
+  background: #581540;
+  color: var(--cor-secundaria);
+  font-weight: 300;
+}
+
+.principal__tabela td,
+.principal__tabela th {
+  border: 1px solid var(--cor-principal);
+  padding: 8px 15px;
+  font-size: 14px;
+}
