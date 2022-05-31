@@ -7,19 +7,24 @@
 }
 
 :root {
-  --cor-principal: #000000;
+  --preto-principal: #000000;
   --cor-secundaria: rgba(247, 247, 247, 0.719);
+  --branco-principal: #ffffff;
+  --roxo-principal: #581540;
+  --rosa-principal: #d9a7c7;
   --gradiente-principal: linear-gradient(45deg, #d9a7c7, #fffcdc);
 }
 
 /* Conteúdo */
 .principal__container {
+  width: 100%;
   text-align: center;
   background: var(--gradiente-principal);
   padding: 15px;
   box-sizing: border-box;
   min-height: 100vh;
 }
+
 .flex__container {
   display: flex;
   align-items: center;
@@ -27,7 +32,7 @@
 }
 
 .principal__conteudo {
-  border: 1px solid var(--cor-principal);
+  border: 1px solid var(--preto-principal);
   border-radius: 15px;
   padding: 20px 25px;
   margin: 0 auto;
@@ -70,7 +75,7 @@
   padding: 5px;
   width: 25%;
   background-color: transparent;
-  border: 0.5px solid #d9a7c7;
+  border: 0.5px solid var(--rosa-principal);
   border-radius: 5px;
 }
 
@@ -97,14 +102,14 @@
   border: none;
   border-radius: 15px;
   font-weight: 500;
-  background-color: #d9a7c7;
+  background-color: var(--rosa-principal);
   transition: 2s all;
   cursor: pointer;
 }
 
 .principal__botao:hover {
-  background-color: #581540;
-  color: white;
+  background-color: var(--roxo-principal);
+  color: var(--branco-principal);
   transform: scale(1.1);
 }
 
@@ -116,14 +121,46 @@
 }
 
 .principal__tabela thead {
-  background: #581540;
+  background: var(--roxo-principal);
   color: var(--cor-secundaria);
   font-weight: 300;
 }
 
 .principal__tabela td,
 .principal__tabela th {
-  border: 1px solid var(--cor-principal);
+  border: 1px solid var(--preto-principal);
   padding: 8px 15px;
   font-size: 14px;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 375px) {
+  .principal__conteudo {
+    width: 80%;
+  }
+
+  .principal__titulo{
+    font-size: 30px;
+  }
+
+  .principal__subtitulo {
+    font-size: 20px;
+  }
+  
+  .principal__tabela {
+    max-width: 100px;
+  }
+
+  .principal__tabela td:first-child,
+  .principal__tabela th:first-child {
+    padding: 5px;
+    width: 40px;
+  }
+
+  .principal__tabela td,
+  .principal__tabela th {
+    padding: 0.5px;
+    font-size: 12px;
+  }
 }
