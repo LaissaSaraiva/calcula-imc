@@ -179,7 +179,7 @@ input[type="number"]:focus {
 
   .principal__tabela {
     width: 200px;
-    margin: 0 auto;
+    margin: 20px auto 0;
   }
 
   .principal__tabela td:first-child,
