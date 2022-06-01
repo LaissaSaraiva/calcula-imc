@@ -34,31 +34,36 @@
 
         <form class="principal__formulario">
           <div class="div__input">
-            <label for="altura">Altura<small>(Ex: 1,65)</small></label>
-            <input
-              type="number"
-              name=""
-              id="altura"
-              placeholder="Metros"
-              maxlength="4"
-              min="0"
-              max="3"
-              step="0.01"
-            /><br />
+            <div>
+              <label for="altura">Altura<small>(Ex: 1,65)</small></label>
+              <input
+                type="number"
+                name=""
+                id="altura"
+                placeholder="Metros"
+                maxlength="4"
+                min="0"
+                max="3"
+                step="0.01"
+              /><br />
+            </div>
 
-            <label for="peso">Peso <small>(Ex: 58,6)</small></label>
-            <input
-              type="number"
-              name=""
-              id="peso"
-              placeholder="Quilos"
-              min="0"
-              step="0.01"            />
+            <div>
+              <label for="peso">Peso <small>(Ex: 58,6)</small></label>
+              <input
+                type="number"
+                name=""
+                id="peso"
+                placeholder="Quilos"
+                min="0"
+                step="0.01"
+              />
+            </div>
           </div>
 
           <div class="div__botoes">
             <button
-              type="submit"
+              type="button"
               class="principal__botao"
               onclick="calculaImc()"
             >
